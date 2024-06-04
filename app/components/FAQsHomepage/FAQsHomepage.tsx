@@ -92,7 +92,7 @@ const faqs = [
   // More questions...
 ];
 
-export default function FAQs() {
+export default function FAQsHomepage() {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl px-6 py-24 sm:pt-32 lg:px-8 lg:py-40">
