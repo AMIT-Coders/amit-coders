@@ -68,7 +68,7 @@ export default function Navbar() {
           
             <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">AMIT Coders</span>
-            <Image className="h-10 w-auto" src="./Assets/Brand/logo.gif" alt="AMIT Coders Logo in the NavBar" width={100} height={100}/>
+            <Image className="h-10 w-auto" src="/Assets/Brand/logo.gif" alt="AMIT Coders Logo in the NavBar" width={100} height={100}/>
             </Link>
           
         </div>
