@@ -101,7 +101,7 @@ export default function Footer() {
           <div className="space-y-8">
             <Image
               className="h-12"
-              src="/Assets/Brand/logo2.gif"
+              src="./Assets/Brand/logo2.gif"
               alt="AMIT Coders Logo in the Footer"
             />
 
