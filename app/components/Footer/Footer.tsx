@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 const navigation = {
   solutions: [
     { name: "Marketing", href: "#" },
@@ -99,11 +99,17 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
-            <img
+            <Image
               className="h-12"
               src="/Assets/Brand/logo2.gif"
               alt="AMIT Coders Logo in the Footer"
             />
+
+            {/* <img
+              className="h-12"
+              src="/Assets/Brand/logo2.gif"
+              alt="AMIT Coders Logo in the Footer"
+            /> */}
             <p className="text-sm leading-6 text-gray-300">
               AMIT, the Association of Management and Information Technology, is
               a swiftly expanding U.S.-based company specializing in embedded
