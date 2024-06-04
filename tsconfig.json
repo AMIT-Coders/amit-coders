@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/HeroHomepage/HeroHomepage.jsx", "app/components/FAQs/FAQs.tsx", "app/components/Navbar/Navbar.jsx", "app/components/Footer/Footer.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/HeroHomepage/HeroHomepage.jsx", "app/components/FAQs/FAQs.tsx", "app/components/Navbar/Navbar.jsx", "app/components/Footer/Footer.tsx", "app/components/Dropdown/Dropdown.js"],
   "exclude": ["node_modules"]
 }

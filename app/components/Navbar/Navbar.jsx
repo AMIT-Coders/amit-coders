@@ -31,26 +31,29 @@ const products = [
   {
     name: 'Data Analytics Bootcamp',
     description: 'Get a better understanding where your traffic is coming from',
-    href: '#',
+    href: '/Courses/DataAnalytics',
     icon: ChartPieIcon,
   },
   {
     name: 'Software Engineering Bootcamp',
     description: 'Speak directly to your customers with our engagement tool',
-    href: '#',
+    href: '/Courses/SoftwareEngineering',
     icon: CursorArrowRaysIcon,
   },
-  { name: 'Cyber Security Bootcamp', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
+  { name: 'Cyber Security Bootcamp', 
+    description: 'Your customers’ data will be safe and secure', 
+    href: '/Courses/CyberSecurity', 
+    icon: FingerPrintIcon },
   {
     name: 'Machine Learning Bootcamp',
     description: 'Your customers’ data will be safe and secure',
-    href: '#',
+    href: '/Courses/MachineLearning',
     icon: SquaresPlusIcon,
   },
 ]
 const callsToAction = [
   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
+  { name: 'Get a call', href: '#', icon: PhoneIcon },
   { name: 'View all courses', href: '/Courses', icon: RectangleGroupIcon },
 ]
 
@@ -135,6 +138,7 @@ export default function Navbar() {
         <Link href="/WhyAMIT" className="text-sm font-semibold leading-6 text-gray-900">
         Why AMIT?
         </Link>
+        
         <Link href="#" className="text-sm font-semibold leading-6 text-gray-900">
         Resources
         </Link>

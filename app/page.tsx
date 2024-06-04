@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <HeroHomepage />
-      {/* Here will be Know the basics */}
+      {/* <Dropdown /> */}
       <Definitions />
       <Hero2Homepage />
       <Empoweryourskills />

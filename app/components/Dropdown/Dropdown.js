@@ -1,3 +1,4 @@
+"use client"
 import { Fragment } from 'react'
 import { Menu, MenuButton, MenuItem, MenuItems, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
@@ -84,5 +85,5 @@ export default function Dropdown() {
         </MenuItems>
       </Transition>
     </Menu>
-  );
+  )
 }
