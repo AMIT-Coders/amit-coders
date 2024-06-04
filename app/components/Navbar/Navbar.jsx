@@ -29,20 +29,20 @@ import Link from 'next/link'
 
 const products = [
   {
-    name: 'Analytics',
+    name: 'Data Analytics Bootcamp',
     description: 'Get a better understanding where your traffic is coming from',
     href: '#',
     icon: ChartPieIcon,
   },
   {
-    name: 'Engagement',
+    name: 'Software Engineering Bootcamp',
     description: 'Speak directly to your customers with our engagement tool',
     href: '#',
     icon: CursorArrowRaysIcon,
   },
-  { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
+  { name: 'Cyber Security Bootcamp', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
   {
-    name: 'Integrations',
+    name: 'Machine Learning Bootcamp',
     description: 'Your customers’ data will be safe and secure',
     href: '#',
     icon: SquaresPlusIcon,
@@ -51,7 +51,7 @@ const products = [
 const callsToAction = [
   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
   { name: 'Contact sales', href: '#', icon: PhoneIcon },
-  { name: 'View all products', href: '#', icon: RectangleGroupIcon },
+  { name: 'View all courses', href: '/Courses', icon: RectangleGroupIcon },
 ]
 
 function classNames(...classes) {
@@ -135,14 +135,13 @@ export default function Navbar() {
         <Link href="/WhyAMIT" className="text-sm font-semibold leading-6 text-gray-900">
         Why AMIT?
         </Link>
-        
+        <Link href="#" className="text-sm font-semibold leading-6 text-gray-900">
+        Resources
+        </Link>
+        <Link href="/Blog" className="text-sm font-semibold leading-6 text-gray-900">
+          Blog
+        </Link>
 
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Resources
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Blog
-          </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="https://amitcoders.talentlms.com/" className="text-sm font-semibold leading-6 text-gray-900">

@@ -1,6 +1,13 @@
-export default function aboutUs() {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About AMIT?",
+  description: "About AMIT?",
+};
+
+export default function AboutUs() {
   return (
-    <div>
+    <div className="text-black">
       <h1>About AMIT</h1>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis

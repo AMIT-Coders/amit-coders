@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Why AMIT?",
+  description: "Why AMIT?",
+};
+
 export default function WhyAMIT() {
   return (
-    <div>
+    <div className="text-black">
       <h1>Why AMIT Coders</h1>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
