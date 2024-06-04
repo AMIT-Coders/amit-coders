@@ -52,7 +52,7 @@ const products = [
   },
 ]
 const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
+  { name: 'Join a Workshop', href: '#', icon: PlayCircleIcon },
   { name: 'Get a call', href: '#', icon: PhoneIcon },
   { name: 'View all courses', href: '/Courses', icon: RectangleGroupIcon },
 ]
