@@ -28,7 +28,7 @@ export default function Banner() {
         />
       </div>
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-        <p className="text-sm leading-6 text-gray-900">
+        <p className="text-sm leading-6 text-Prussian-Blue">
           <strong className="font-semibold">Free Wokshops</strong>
           <svg viewBox="0 0 2 2" className="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true">
             <circle cx={1} cy={1} r={1} />
@@ -37,7 +37,7 @@ export default function Banner() {
         </p>
         <a
           href="https://www.eventbrite.com/o/amit-coders-84794363503"
-          className="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+          className="flex-none rounded-full bg-Prussian-Blue px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
         >
           Register now <span aria-hidden="true">&rarr;</span>
         </a>
@@ -45,7 +45,7 @@ export default function Banner() {
       <div className="flex flex-1 justify-end">
         {/* <button type="button" className="-m-3 p-3 focus-visible:outline-offset-[-4px]">
           <span className="sr-only">Dismiss</span>
-          <XMarkIcon className="h-5 w-5 text-gray-900" aria-hidden="true" />
+          <XMarkIcon className="h-5 w-5 text-Prussian-Blue" aria-hidden="true" />
         </button> */}
       </div>
     </div>

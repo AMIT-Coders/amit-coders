@@ -5,12 +5,13 @@ interface Section {
 }
 
 // Function to generate an ID from a title
-const generateId = (title: string): string => title.toLowerCase().replace(/\s+/g, '-');
+const generateId = (title: string): string =>
+  title.toLowerCase().replace(/\s+/g, "-");
 
 // Example sections array
 const sections: Section[] = [
   {
-    title: 'OUR SERVICES',
+    title: "OUR SERVICES",
     content: `<p className="text-1xl mb-2">
     The information provided when using the Services is not intended for
     distribution to or use by any person or entity in any jurisdiction or
@@ -31,7 +32,7 @@ const sections: Section[] = [
   </p>`,
   },
   {
-    title: 'INTELLECTUAL PROPERTY RIGHTS',
+    title: "INTELLECTUAL PROPERTY RIGHTS",
     content: `<p className="text-1xl mb-2">Our intellectual property</p>
     <p className="text-1xl mb-2">
       We are the owner or the licensee of all intellectual property rights in
@@ -132,7 +133,7 @@ const sections: Section[] = [
     </p>`,
   },
   {
-    title: 'USER REPRESENTATIONS',
+    title: "USER REPRESENTATIONS",
     content: `<p className="text-1xl mb-2">
     By using the Services, you represent and warrant that: (1) all
     registration information you submit will be true, accurate, current, and
@@ -164,7 +165,7 @@ const sections: Section[] = [
   </p>`,
   },
   {
-    title: 'PURCHASES AND PAYMENT',
+    title: "PURCHASES AND PAYMENT",
     content: `<p className="text-1xl mb-2">We accept the following forms of payment:</p>
     <ul>
       <li>Stripe</li>
@@ -198,14 +199,14 @@ const sections: Section[] = [
     </p>`,
   },
   {
-    title: 'POLICY',
+    title: "POLICY",
     content: `<p className="text-1xl mb-2">
     Please review our Return Policy posted on the Services prior to making
     any purchases.
   </p>`,
   },
   {
-    title: 'PROHIBITED ACTIVITIES',
+    title: "PROHIBITED ACTIVITIES",
     content: `<p className="text-1xl mb-2">
     You may not access or use the Services for any purpose other than that
     for which we make the Services available. The Services may not be used
@@ -328,7 +329,7 @@ const sections: Section[] = [
   </ul>`,
   },
   {
-    title: 'USER GENERATED CONTRIBUTIONS',
+    title: "USER GENERATED CONTRIBUTIONS",
     content: `<p className="text-1xl mb-2">
     The Services does not offer users to submit or post content. We may
     provide you with the opportunity to create, submit, post, display,
@@ -410,7 +411,7 @@ const sections: Section[] = [
   </p>`,
   },
   {
-    title: 'CONTRIBUTION LICENSE',
+    title: "CONTRIBUTION LICENSE",
     content: `<p className="text-1xl mb-2">
     You and Services agree that we may access, store, process, and use any
     information and personal data that you provide and your choices
@@ -433,7 +434,7 @@ const sections: Section[] = [
   </p>`,
   },
   {
-    title: 'GUIDELINES FOR REVIEWS',
+    title: "GUIDELINES FOR REVIEWS",
     content: `<p className="text-1xl mb-2">
     We may provide you areas on the Services to leave reviews or ratings.
     When posting a review, you must comply with the following criteria: (1)
@@ -464,7 +465,7 @@ const sections: Section[] = [
   </p>`,
   },
   {
-    title: 'THIRD-PARTY WEBSITES AND CONTENT',
+    title: "THIRD-PARTY WEBSITES AND CONTENT",
     content: `<p className="text-1xl mb-2">
     The Services may contain (or you may be sent via the Site) links to
     other websites ("Third-Party Websites") as well as articles,
@@ -500,7 +501,7 @@ const sections: Section[] = [
   </p>`,
   },
   {
-    title: 'SERVICES MANAGEMENT',
+    title: "SERVICES MANAGEMENT",
     content: `<p className="text-1xl mb-2">
     We reserve the right, but not the obligation, to: (1) monitor the
     Services for violations of these Legal Terms; (2) take appropriate legal
@@ -518,7 +519,7 @@ const sections: Section[] = [
   </p>`,
   },
   {
-    title: 'PRIVACY POLICY',
+    title: "PRIVACY POLICY",
     content: `<p className="text-1xl mb-2">
     We care about data privacy and security. By using the Services, you
     agree to be bound by our Privacy Policy posted on the Services, which is
@@ -539,7 +540,7 @@ const sections: Section[] = [
   </p>`,
   },
   {
-    title: 'TERM AND TERMINATION',
+    title: "TERM AND TERMINATION",
     content: `<p className="text-1xl mb-2">
     These Legal Terms shall remain in full force and effect while you use
     the Services. WITHOUT LIMITING ANY OTHER PROVISION OF THESE LEGAL TERMS,
@@ -563,7 +564,7 @@ const sections: Section[] = [
   </p>`,
   },
   {
-    title: 'MODIFICATIONS AND INTERRUPTIONS',
+    title: "MODIFICATIONS AND INTERRUPTIONS",
     content: `<p className="text-1xl mb-2">
     We reserve the right to change, modify, or remove the contents of the
     Services at any time or for any reason at our sole discretion without
@@ -587,7 +588,7 @@ const sections: Section[] = [
   </p>`,
   },
   {
-    title: 'GOVERNING LAW',
+    title: "GOVERNING LAW",
     content: `<p className="text-1xl mb-2">
     These Legal Terms and your use of the Services are governed by and
     construed in accordance with the laws of the State of California
@@ -596,7 +597,7 @@ const sections: Section[] = [
   </p>`,
   },
   {
-    title: 'DISPUTE RESOLUTION',
+    title: "DISPUTE RESOLUTION",
     content: `<h4>Informal Negotiations</h4>
 
     <p className="text-1xl mb-2">
@@ -686,7 +687,7 @@ const sections: Section[] = [
     </p>`,
   },
   {
-    title: 'CORRECTIONS',
+    title: "CORRECTIONS",
     content: `<p className="text-1xl mb-2">
     There may be information on the Services that contains typographical
     errors, inaccuracies, or omissions, including descriptions, pricing,
@@ -696,7 +697,7 @@ const sections: Section[] = [
   </p>`,
   },
   {
-    title: 'DISCLAIMER',
+    title: "DISCLAIMER",
     content: `<p className="text-1xl mb-2">
     THE SERVICES ARE PROVIDED ON AN AS-IS AND AS-AVAILABLE BASIS. YOU AGREE
     THAT YOUR USE OF THE SERVICES WILL BE AT YOUR SOLE RISK. TO THE FULLEST
@@ -729,7 +730,7 @@ const sections: Section[] = [
   </p>`,
   },
   {
-    title: 'LIMITATIONS OF LIABILITY',
+    title: "LIMITATIONS OF LIABILITY",
     content: `<p className="text-1xl mb-2">
     IN NO EVENT WILL WE OR OUR DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE TO
     YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL,
@@ -747,7 +748,7 @@ const sections: Section[] = [
   </p>`,
   },
   {
-    title: 'INDEMNIFICATION',
+    title: "INDEMNIFICATION",
     content: `<p className="text-1xl mb-2">
     You agree to defend, indemnify, and hold us harmless, including our
     subsidiaries, affiliates, and all of our respective officers, agents,
@@ -768,7 +769,7 @@ const sections: Section[] = [
   </p>`,
   },
   {
-    title: 'USER DATA',
+    title: "USER DATA",
     content: `<p className="text-1xl mb-2">
     We will maintain certain data that you transmit to the Services for the
     purpose of managing the performance of the Services, as well as data
@@ -781,7 +782,7 @@ const sections: Section[] = [
   </p>`,
   },
   {
-    title: 'ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES',
+    title: "ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES",
     content: `<p className="text-1xl mb-2">
     Visiting the Services, sending us emails, and completing online forms
     constitute electronic communications. You consent to receive electronic
@@ -799,7 +800,7 @@ const sections: Section[] = [
   </p>`,
   },
   {
-    title: 'CALIFORNIA USERS AND RESIDENTS',
+    title: "CALIFORNIA USERS AND RESIDENTS",
     content: `<p className="text-1xl mb-2">
     If any complaint with us is not satisfactorily resolved, you can contact
     the Complaint Assistance Unit of the Division of Consumer Services of
@@ -809,7 +810,7 @@ const sections: Section[] = [
   </p>`,
   },
   {
-    title: 'MISCELLANEOUS',
+    title: "MISCELLANEOUS",
     content: `<p className="text-1xl mb-2">
     These Legal Terms and any policies or operating rules posted by us on
     the Services or in respect to the Services constitute the entire
@@ -833,7 +834,7 @@ const sections: Section[] = [
   </p>`,
   },
   {
-    title: 'CONTACT US',
+    title: "CONTACT US",
     content: `<p className="text-1xl mb-2">
     In order to resolve a complaint regarding the Services or to receive
     further information regarding use of the Services, please contact us at:
@@ -845,68 +846,116 @@ const sections: Section[] = [
     Phone: (916)570 7964 <br />
     info@amitcoders.org <br />
   </p>`,
-  }
+  },
 ];
 
 export default function TermsAndPrivacyPolicy() {
   return (
-    <div className="flex flex-col md:flex-row bg-gray-100 min-h-screen">
-      {/* Sticky Sidebar */}
-      <div className="md:w-64 w-full bg-white shadow-lg p-4">
-        <div className="sticky top-0 max-h-screen overflow-auto hide-scrollbar">
-          <h2 className="text-2xl font-bold mb-4">Navigation</h2>
-          <ul className="space-y-2">
-            {sections.map((section, index) => (
-              <li key={generateId(section.title)}>
-                <a href={`#${generateId(section.title)}`} className="text-blue-500 hover:underline">{`${index + 1}. ${section.title}`}</a>
-              </li>
-            ))}
-          </ul>
+    <div className="max-w-7xl sm:px-6 lg:px-8 mx-auto">
+      <div className="flex flex-col md:flex-row bg-gray-100 min-h-screen">
+        {/* Sticky Sidebar */}
+        <div className="md:w-64 w-full bg-white shadow-lg p-4">
+          <div className="sticky top-0 max-h-screen overflow-auto hide-scrollbar">
+            <h2 className="text-2xl font-bold mb-4">Navigation</h2>
+            <ul className="space-y-2">
+              {sections.map((section, index) => (
+                <li key={generateId(section.title)}>
+                  <a
+                    href={`#${generateId(section.title)}`}
+                    className="text-blue-500 hover:underline"
+                  >{`${index + 1}. ${section.title}`}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        {/* Main Content */}
+        <div className="flex-1 p-8">
+          <h1 className="text-4xl font-bold mb-1 text-center">
+            Terms and Conditions
+          </h1>
+          <h3 className="text-1xl font-bold mb-6 text-center">
+            Last updated March 31, 2024
+          </h3>
+          <h2 className="text-2xl font-bold mb-4 text-center">
+            AGREEMENT TO OUR LEGAL TERMS
+          </h2>
+          <p className="text-1xl mb-4 text-left">
+            We are AMIT LLC, doing business as AMIT Coders ("Company," "we,"
+            "us," "our"), a company registered in California, United States at
+            2108 N ST, STE N, Sacramento , CA 95816.
+          </p>
+          <p className="text-1xl mb-4 text-left">
+            We operate the website https://amitcoders.org/ (the "Site"), as well
+            as any other related products and services that refer or link to
+            these legal terms (the "Legal Terms") (collectively, the
+            "Services").
+          </p>
+          <p className="text-1xl mb-4 text-left">
+            We provide specialized online training programs designed to equip
+            participants with practical knowledge and hands-on experience in
+            areas such as software development, data science, artificial
+            intelligence, cybersecurity, and more.
+          </p>
+          <p className="text-1xl mb-4 text-left">
+            You can contact us by phone at (916)570 7964, email at
+            info@amitcoders.org or by mail to 99 South Almaden Blvd., Suite 600,
+            San Jose , CA 95113, United States.
+          </p>
+          <p className="text-1xl mb-4 text-left">
+            These Legal Terms constitute a legally binding agreement made
+            between you, whether personally or on behalf of an entity ("you"),
+            and AMIT LLC, concerning your access to and use of the Services. You
+            agree that by accessing the Services, you have read, understood, and
+            agreed to be bound by all of these Legal Terms. IF YOU DO NOT AGREE
+            WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED
+            FROM USING THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY.
+          </p>
+          <p className="text-1xl mb-4 text-left">
+            Supplemental terms and conditions or documents that may be posted on
+            the Services from time to time are hereby expressly incorporated
+            herein by reference. We reserve the right, in our sole discretion,
+            to make changes or modifications to these Legal Terms at any time
+            and for any reason. We will alert you about any changes by updating
+            the "Last updated" date of these Legal Terms, and you waive any
+            right to receive specific notice of each such change. It is your
+            responsibility to periodically review these Legal Terms to stay
+            informed of updates. You will be subject to, and will be deemed to
+            have been made aware of and to have accepted, the changes in any
+            revised Legal Terms by your continued use of the Services after the
+            date such revised Legal Terms are posted.
+          </p>
+          <p className="text-1xl mb-4 text-left">
+            The Services are intended for users who are at least 13 years of
+            age. All users who are minors in the jurisdiction in which they
+            reside (generally under the age of 18) must have the permission of,
+            and be directly supervised by, their parent or guardian to use the
+            Services. If you are a minor, you must have your parent or guardian
+            read and agree to these Legal Terms prior to you using the Services.
+          </p>
+          <p className="text-1xl mb-4 text-left">
+            We recommend that you print a copy of these Legal Terms for your
+            records.
+          </p>
+
+          {sections.map((section, index) => (
+            <section
+              id={generateId(section.title)}
+              key={generateId(section.title)}
+              className="mb-8"
+            >
+              <h2 className="text-3xl font-bold mb-4">{`${index + 1}. ${
+                section.title
+              }`}</h2>
+              <div
+                className="text-gray-700 mb-4"
+                dangerouslySetInnerHTML={{ __html: section.content }}
+              />
+            </section>
+          ))}
         </div>
       </div>
-      
-      {/* Main Content */}
-      <div className="flex-1 p-8">
-      <h1 className="text-4xl font-bold mb-1 text-center">Terms and Conditions</h1>
-      <h3 className="text-1xl font-bold mb-6 text-center">Last updated March 31, 2024</h3>
-      <h2 className="text-2xl font-bold mb-4 text-center">AGREEMENT TO OUR LEGAL TERMS</h2>
-      <p className="text-1xl mb-4 text-left">
-        We are AMIT LLC, doing business as AMIT Coders ("Company," "we," "us," "our"), a company registered in California, United States at 2108 N ST, STE N, Sacramento , CA 95816.
-      </p>
-      <p className="text-1xl mb-4 text-left">
-        We operate the website https://amitcoders.org/ (the "Site"), as well as any other related products and services that refer or link to these legal terms (the "Legal Terms") (collectively, the "Services").
-      </p>
-      <p className="text-1xl mb-4 text-left">
-        We provide specialized online training programs designed to equip participants with practical knowledge and hands-on experience in areas such as software development, data science, artificial intelligence, cybersecurity, and more.
-      </p>
-      <p className="text-1xl mb-4 text-left">
-        You can contact us by phone at (916)570 7964, email at info@amitcoders.org or by mail to 99 South Almaden Blvd., Suite 600, San Jose , CA 95113, United States.
-      </p>
-      <p className="text-1xl mb-4 text-left">
-        These Legal Terms constitute a legally binding agreement made between you, whether personally or on behalf of an entity ("you"), and AMIT LLC, concerning your access to and use of the Services. You agree that by accessing the Services, you have read, understood, and agreed to be bound by all of these Legal Terms. IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY.
-      </p>
-      <p className="text-1xl mb-4 text-left">
-        Supplemental terms and conditions or documents that may be posted on the Services from time to time are hereby expressly incorporated herein by reference. We reserve the right, in our sole discretion, to make changes or modifications to these Legal Terms at any time and for any reason. We will alert you about any changes by updating the "Last updated" date of these Legal Terms, and you waive any right to receive specific notice of each such change. It is your responsibility to periodically review these Legal Terms to stay informed of updates. You will be subject to, and will be deemed to have been made aware of and to have accepted, the changes in any revised Legal Terms by your continued use of the Services after the date such revised Legal Terms are posted.
-      </p>
-      <p className="text-1xl mb-4 text-left">
-        The Services are intended for users who are at least 13 years of age. All users who are minors in the jurisdiction in which they reside (generally under the age of 18) must have the permission of, and be directly supervised by, their parent or guardian to use the Services. If you are a minor, you must have your parent or guardian read and agree to these Legal Terms prior to you using the Services.
-      </p>
-      <p className="text-1xl mb-4 text-left">
-        We recommend that you print a copy of these Legal Terms for your records.
-      </p>
-        
-        {sections.map((section, index) => (
-          <section id={generateId(section.title)} key={generateId(section.title)} className="mb-8">
-            <h2 className="text-3xl font-bold mb-4">{`${index + 1}. ${section.title}`}</h2>
-            <div
-              className="text-gray-700 mb-4"
-              dangerouslySetInnerHTML={{ __html: section.content }}
-            />
-          </section>
-        ))}
-      </div>
     </div>
-
-            
   );
 }

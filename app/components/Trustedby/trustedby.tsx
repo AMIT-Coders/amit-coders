@@ -1,46 +1,51 @@
+import React from "react";
+// import './Trustedby.css'; // Import the CSS file
+
+const images = [
+  {
+    src: "https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg",
+    alt: "Transistor",
+  },
+  {
+    src: "https://tailwindui.com/img/logos/158x48/reform-logo-white.svg",
+    alt: "Reform",
+  },
+  {
+    src: "https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg",
+    alt: "Tuple",
+  },
+  {
+    src: "https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg",
+    alt: "SavvyCal",
+  },
+  {
+    src: "https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg",
+    alt: "Statamic",
+  },
+];
+
 export default function Trustedby() {
   return (
-    <div className="bg-gray-900 py-24 sm:py-32">
+    <div className="bg-Prussian-Blue py-24 sm:py-32 overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className="text-center text-lg font-semibold leading-8 text-white">
           Trusted by
         </h2>
-        <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-          <img
-            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg"
-            alt="Transistor"
-            width={158}
-            height={48}
-          />
-          <img
-            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/reform-logo-white.svg"
-            alt="Reform"
-            width={158}
-            height={48}
-          />
-          <img
-            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg"
-            alt="Tuple"
-            width={158}
-            height={48}
-          />
-          <img
-            className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg"
-            alt="SavvyCal"
-            width={158}
-            height={48}
-          />
-          <img
-            className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg"
-            alt="Statamic"
-            width={158}
-            height={48}
-          />
+        <div className="relative mt-10 flex items-center justify-center">
+          <div className="marquee">
+            <div className="marquee-inner flex space-x-10">
+              {images.concat(images).map((image, index) => (
+                <img
+                  key={index}
+                  className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                  src={image.src}
+                  alt={image.alt}
+                  width={158}
+                  height={48}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>

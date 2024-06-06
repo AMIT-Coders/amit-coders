@@ -41,12 +41,12 @@ export default function HeroHomepage() {
             <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-10">
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                  <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                    Unleash your Ambition.
+                  <h1 className="text-4xl font-bold tracking-tight text-Prussian-Blue sm:text-6xl">
+                    Unleash your <span className="text-Light-Sea-Green text-decoration">Ambition</span>.
                     <br/>
                     Step into the world of Tech
                   </h1>
-                  <p className="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
+                  <p className="relative mt-6 text-2xl leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
                     Unlock Your Competitive Edge: One Word <br/>
                     Defines It All - 'Technology.'
                   </p>

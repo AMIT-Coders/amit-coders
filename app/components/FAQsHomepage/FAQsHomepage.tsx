@@ -94,18 +94,18 @@ const faqs = [
 
 export default function FAQsHomepage() {
   return (
-    <div className="bg-white">
+    <div className="bg-Anti-Flash_white">
       <div className="mx-auto max-w-7xl px-6 py-24 sm:pt-32 lg:px-8 lg:py-40">
         <div className="lg:grid lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-5">
-            <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900">
+            <h2 className="text-2xl font-bold leading-10 tracking-tight text-Prussian-Blue">
               Frequently asked questions
             </h2>
             <p className="mt-4 text-base leading-7 text-gray-600">
               Can’t find the answer you’re looking for? Reach out to our{" "}
               <a
                 href="#"
-                className="font-semibold text-indigo-600 hover:text-indigo-500"
+                className="font-semibold text-Light-Sea-Green hover:text-teal-600"
               >
                 customer support
               </a>{" "}
@@ -116,7 +116,7 @@ export default function FAQsHomepage() {
             <dl className="space-y-10">
               {faqs.map((faq) => (
                 <div key={faq.question}>
-                  <dt className="text-base font-semibold leading-7 text-gray-900">
+                  <dt className="text-lg font-semibold leading-7 text-Prussian-Blue">
                     {faq.question}
                   </dt>
                   <dd className="mt-2 text-base leading-7 text-gray-600">

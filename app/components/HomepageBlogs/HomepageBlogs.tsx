@@ -50,10 +50,10 @@ const posts = [
 
 export default function HomepageBlogs() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-Seasalt py-24 sm:py-32">
       <div className="mx-auto max-w-2xl text-center mb-8">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          See Our Recent Blogs
+        <h2 className="text-3xl font-bold tracking-tight text-Prussian-Blue sm:text-4xl">
+          <a href="/Blog">See Our Recent Blogs</a>
         </h2>
         <p className="mt-2 text-lg leading-8 text-gray-600">
           Our Blogs All Related Learning
@@ -69,7 +69,7 @@ export default function HomepageBlogs() {
           </time>
           <h2
             id="featured-post"
-            className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+            className="mt-4 text-3xl font-bold tracking-tight text-Prussian-Blue sm:text-4xl"
           >
             {featuredPost.title}
           </h2>
@@ -80,7 +80,7 @@ export default function HomepageBlogs() {
             <div className="flex">
               <a
                 href={featuredPost.href}
-                className="text-sm font-semibold leading-6 text-indigo-600"
+                className="text-sm font-semibold leading-6 text-Light-Sea-Green"
                 aria-describedby="featured-post"
               >
                 Continue reading <span aria-hidden="true">&rarr;</span>
@@ -89,7 +89,7 @@ export default function HomepageBlogs() {
             <div className="flex lg:border-t lg:border-gray-900/10 lg:pt-8">
               <a
                 href={featuredPost.author.href}
-                className="flex gap-x-2.5 text-sm font-semibold leading-6 text-gray-900"
+                className="flex gap-x-2.5 text-sm font-semibold leading-6 text-Prussian-Blue"
               >
                 <img
                   src={featuredPost.author.imageUrl}
@@ -112,7 +112,7 @@ export default function HomepageBlogs() {
                   >
                     {post.date}
                   </time>
-                  <h2 className="mt-2 text-lg font-semibold text-gray-900 group-hover:text-gray-600">
+                  <h2 className="mt-2 text-lg font-semibold text-Prussian-Blue group-hover:text-gray-600">
                     <a href={post.href}>
                       <span className="absolute inset-0" />
                       {post.title}
@@ -125,7 +125,7 @@ export default function HomepageBlogs() {
                 <div className="mt-4 flex">
                   <a
                     href={post.author.href}
-                    className="relative flex gap-x-2.5 text-sm font-semibold leading-6 text-gray-900"
+                    className="relative flex gap-x-2.5 text-sm font-semibold leading-6 text-Prussian-Blue"
                   >
                     <img
                       src={post.author.imageUrl}

@@ -1,7 +1,7 @@
 export default function Hero3Homepage() {
     return (
-      <div className="bg-white pb-16 pt-24 sm:pb-24 sm:pt-32 xl:pb-32">
-        <div className="bg-gray-900 pb-20 sm:pb-24 xl:pb-0">
+      <div className="text-Anti-Flash_white pb-16 pt-24 sm:pb-24 sm:pt-32 xl:pb-32">
+        <div className="bg-Prussian-Blue pb-20 sm:pb-24 xl:pb-0">
           <div className="mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
             <div className="-mt-8 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none">
               <div className="relative aspect-[2/1] h-full md:-mx-8 xl:mx-0 xl:aspect-auto">
@@ -26,17 +26,24 @@ export default function Hero3Homepage() {
                   />
                   <use href="#b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb" x={86} />
                 </svg>
-                <h2>Upskill Your Company by Boosting Skills and Building Teams</h2>
+                <h2 className="relative text-2xl mb-3">
+                <span className="absolute inset-0 flex -mt-3.5 -ml-4">
+                  <span className="-z-10 w-12 h-12 bg-Poppy rounded-full"></span>
+                </span>
+                  Upskill Your Company by Boosting Skills and Building Teams
+                </h2>
+                <p className="mt-8 mb-8 text-3xl text-Light-Sea-Green font-semibold">You can do it with AMIT</p>
                 <blockquote className="text-xl font-semibold leading-8 text-white sm:text-2xl sm:leading-9">
                   <p>
-                    Gravida quam mi erat tortor neque molestie. Auctor aliquet at porttitor a enim nunc suscipit tincidunt
-                    nunc. Et non lorem tortor posuere. Nunc eu scelerisque interdum eget tellus non nibh scelerisque
-                    bibendum.
+                  AMIT’s commitment to cultivating in-demand skills and leading-edge talent extends to your workforce.
+                  <br />
+                  We transform companies of all sizes by providing, assessing, and training talent in today’s top tech, design, and business strategies.
                   </p>
                 </blockquote>
-                <figcaption className="mt-8 text-base">
-                  <div className="font-semibold text-white">Judith Black</div>
-                  <div className="mt-1 text-gray-400">CEO of Workcation</div>
+                <figcaption className="mt-8 text-base text-center">
+                  <a href="#" className="bg-Light-Sea-Green text-white py-3 px-6 rounded-lg font-bold hover:bg-teal-600">Learn More</a>
+                  {/* <div className="font-semibold text-white">Judith Black</div>
+                  <div className="mt-1 text-gray-400">CEO of Workcation</div> */}
                 </figcaption>
               </figure>
             </div>
