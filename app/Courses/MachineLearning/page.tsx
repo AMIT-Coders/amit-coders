@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ChevronRightIcon, HomeIcon } from '@heroicons/react/20/solid'
 
 export const metadata: Metadata = {
   title: "Machine Learning",
@@ -18,9 +19,14 @@ const stats = [
   { name: 'Paid time off', value: 'Unlimited' },
 ]
 
+const pages = [
+  { name: 'Courses', href: '/Courses', current: false },
+  { name: 'Machine Learning Bootcamp', href: '#', current: true },
+]
+
 export default function MachineLearning() {
   return (
-    <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+    <div className="relative isolate overflow-hidden bg-gray-900 py-8 sm:py-12">
     <img
       src="https://images.unsplash.com/photo-1485796826113-174aa68fd81b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-5&exp=15&blend-mode=multiply"
       alt=""
@@ -51,6 +57,34 @@ export default function MachineLearning() {
       />
     </div>
     <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      {/* Breadcrumbs starts here */}
+      <nav className="flex pb-10" aria-label="Breadcrumb">
+      <ol role="list" className="flex items-center space-x-4">
+        <li>
+          <div>
+            <a href="/" className="text-gray-100 hover:text-gray-200">
+              <HomeIcon className="h-5 w-5 flex-shrink-0" aria-hidden="true" />
+              <span className="sr-only">Home</span>
+            </a>
+          </div>
+        </li>
+        {pages.map((page) => (
+          <li key={page.name}>
+            <div className="flex items-center">
+              <ChevronRightIcon className="h-5 w-5 flex-shrink-0 text-gray-100" aria-hidden="true" />
+              <a
+                href={page.href}
+                className="ml-4 text-sm font-medium text-gray-100 hover:text-gray-200"
+                aria-current={page.current ? 'page' : undefined}
+              >
+                {page.name}
+              </a>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </nav>
+        {/* Breadcrumbs ends here */}
       <div className="mx-auto max-w-2xl lg:mx-0">
         <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Machine Learning</h2>
         <p className="mt-6 text-lg leading-8 text-gray-300">

@@ -5,53 +5,40 @@ export const metadata: Metadata = {
   description: "About AMIT?",
 };
 
-// export default function AboutUs() {
-//   return (
-//     <div className="text-black">
-//       <h1>About AMIT</h1>
-//       <p>
-//         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
-//         tenetur eveniet sapiente maiores et officiis nam! Velit dolorum maxime
-//         rem aliquam veniam! Molestiae dolore placeat, voluptatum ad porro
-//         inventore asperiores!
-//       </p>
-//     </div>
-//   );
-// }
 
 const stats = [
-  { label: "Transactions every 24 hours", value: "44 million" },
-  { label: "Assets under holding", value: "$119 trillion" },
-  { label: "New users annually", value: "46,000" },
+  { label: "Graduates", value: "25,000+" },
+  { label: "Instructors and Mentors", value: "250+" },
+  { label: "Teaching Hours", value: "100,000+" },
 ];
 const values = [
   {
-    name: "Be world-class",
+    name: "Expert Insights",
     description:
-      "Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.",
+      "Gain insights from IT industry veterans through expert lectures and guest speakers.",
   },
   {
-    name: "Share everything you know",
+    name: "Hands-On Skills Development",
     description:
-      "Mollitia delectus a omnis. Quae velit aliquid. Qui nulla maxime adipisci illo id molestiae. Cumque cum ut minus rerum architecto magnam consequatur. Quia quaerat minima.",
+      "Apply skills with live labs and simulations for practical application.",
   },
   {
-    name: "Always learning",
+    name: "Networking Excellence",
     description:
-      "Aut repellendus et officiis dolor possimus. Deserunt velit quasi sunt fuga error labore quia ipsum. Commodi autem voluptatem nam. Quos voluptatem totam.",
+      "Establish Industry Connections for ongoing learning, alignment with new tech stacks, and continuous support through community groups.",
   },
   {
-    name: "Be supportive",
+    name: "Career Success",
     description:
-      "Magnam provident veritatis odit. Vitae eligendi repellat non. Eum fugit impedit veritatis ducimus. Non qui aspernatur laudantium modi. Praesentium rerum error deserunt harum.",
+      "Access comprehensive career services during and after the bootcamp, including support for resume building, interview preparation, and job search strategies.",
   },
   {
-    name: "Take responsibility",
+    name: "Take responsibility ***",
     description:
       "Sit minus expedita quam in ullam molestiae dignissimos in harum. Tenetur dolorem iure. Non nesciunt dolorem veniam necessitatibus laboriosam voluptas perspiciatis error.",
   },
   {
-    name: "Enjoy downtime",
+    name: "Enjoy downtime ***",
     description:
       "Ipsa in earum deserunt aut. Quos minus aut animi et soluta. Ipsum dicta ut quia eius. Possimus reprehenderit iste aspernatur ut est velit consequatur distinctio.",
   },
@@ -61,38 +48,79 @@ export default function AboutUs() {
   return (
     <div className="bg-white">
       {/* Content section */}
-      <div className="mx-auto -mt-12 max-w-7xl p-24 sm:mt-0 lg:px-8 xl:-mt-8">
-        <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Our mission
+      <div className="mx-auto max-w-7xl p-6 lg:p-24">
+      <div className="mx-auto max-w-2xl lg:max-w-none lg:grid lg:grid-cols-3 lg:gap-8">
+        <div className="lg:col-span-2">
+          <p className="text-xl leading-8 text-gray-600">
+            The story of AMIT began in Cairo, Egypt in 2011.
+          </p>
+          <h2 className="mt-10 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            WHY AMIT?
           </h2>
+          <div className="mt-10 max-w-xl text-base leading-7 text-gray-700">
+            <p>
+              Where a team of professionals in the tech industry saw the value of Tech education in influencing their careers and lives, and sought to build the first bootcamp in the city of Cairo with the dream to provide quality education that would change people's lives regardless of their background or social status, they believed in fair education for all.
+            </p>
+            <p className="mt-10">
+              Over the years, our company has grown from eight to over 400 people, expanded its geography, and brought quality Tech education services closer to our clients worldwide.
+            </p>
+            <p className="mt-10">
+              Today, AMIT Group is the biggest and highest rated technology education company in the EMEA region with offices and headquarters in the US alongside partnerships with Businesses and educational institutions all over the world.
+            </p>
+            <h2 className="mt-10 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Our Mission
+            </h2>
+            <p className="mt-10">
+              We are on a mission to change people's lives, how are we doing that?, by introducing and educating people about tech and how it can change their lives by changing their careers.
+            </p>
+          </div>
+        </div>
+        <div className="lg:col-span-1 lg:sticky lg:top-24 lg:self-start">
+          <div className="space-y-8">
+            <dl className="w-full space-y-8">
+              {stats.map((stat) => (
+                <div key={stat.label} className="flex flex-col-reverse gap-y-4">
+                  <dt className="text-base leading-7 text-gray-600">{stat.label}</dt>
+                  <dd className="text-5xl font-semibold tracking-tight text-gray-900">{stat.value}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      {/* Content section */}
+      {/* <div className="mx-auto -mt-12 max-w-7xl p-24 sm:mt-0 lg:px-8 xl:-mt-8">
+        <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
           <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
             <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
               <p className="text-xl leading-8 text-gray-600">
-                Aliquet nec orci mattis amet quisque ullamcorper neque, nibh
-                sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque
-                id at vitae feugiat egestas ac. Diam nulla orci at in viverra
-                scelerisque eget. Eleifend egestas fringilla sapien.
+                The story of AMIT began in Cairo, Egypt in 2011. 
               </p>
+              <h2 className="mt-10 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                WHY AMIT?
+              </h2>
               <div className="mt-10 max-w-xl text-base leading-7 text-gray-700">
                 <p>
-                  Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-                  risus enim. Mattis mauris semper sed amet vitae sed turpis id.
-                  Id dolor praesent donec est. Odio penatibus risus viverra
-                  tellus varius sit neque erat velit. Faucibus commodo massa
-                  rhoncus, volutpat. Dignissim sed eget risus enim. Mattis
-                  mauris semper sed amet vitae sed turpis id.
+                Where a team of professionals in the tech industry saw the value of Tech education in influencing their careers and lives, and sought to build the first bootcamp in the city of Cairo with the dream to provide quality education that would change people's lives regardless of their background or social status, they believed in fair education for all. 
                 </p>
                 <p className="mt-10">
-                  Et vitae blandit facilisi magna lacus commodo. Vitae sapien
-                  duis odio id et. Id blandit molestie auctor fermentum
-                  dignissim. Lacus diam tincidunt ac cursus in vel. Mauris
-                  varius vulputate et ultrices hac adipiscing egestas. Iaculis
-                  convallis ac tempor et ut. Ac lorem vel integer orci.
+                Over the years, our company has grown from eight to over 400 people, expanded its geography, and brought quality Tech education services closer to our clients worldwide.
+                </p>
+                <p className="mt-10">
+                Today, AMIT Group is the biggest and highest rated technology education company in the EMEA region with offices and headquarters in the US alongside partnerships with Businesses and educational institutions all over the world. 
+                </p>
+                <h2 className="mt-10 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                  Our Mission
+                </h2>
+                <p className="mt-10">
+                  We are on a mission to change people's lives, how are we doing that?, by introducing and educating people about tech and how it can change their lives by changing their careers. 
                 </p>
               </div>
+              
             </div>
-            <div className="lg:flex lg:flex-auto lg:justify-center">
+            <div className="lg:flex lg:flex-auto lg:justify-center" id="sidebar-statistics">
               <dl className="w-64 space-y-8 xl:w-80">
                 {stats.map((stat) => (
                   <div
@@ -111,10 +139,10 @@ export default function AboutUs() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Image section */}
-      <div className="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
+      <div className="mt-2 sm:mt-2 xl:mx-auto xl:max-w-7xl xl:px-8">
         <img
           src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
           alt=""
@@ -123,14 +151,13 @@ export default function AboutUs() {
       </div>
 
       {/* Values section */}
-      <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0">
+      <div className="mx-auto mt-8 max-w-7xl px-6 sm:mt-16 lg:px-8">
+        <div className="mx-auto max-w-3xl lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Our values
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam
-            voluptatum cupiditate veritatis in accusamus quisquam.
+          AMIT's vision is to be a world leader in tech education, by making tech education more affordable and accessible for people from across the world, our vision is a world where work and life advances to make progress a constant in everyone's life, technology is advancing fast so should our environments, lives and work. 
           </p>
         </div>
         <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
@@ -256,7 +283,7 @@ export default function AboutUs() {
             <p className="mt-4 text-sm leading-6 text-gray-900">
               We care about your data. Read our{" "}
               <a
-                href="#"
+                href="/TermsAndPrivacyPolicy"
                 className="font-semibold text-indigo-600 hover:text-indigo-500"
               >
                 privacy&nbsp;policy
