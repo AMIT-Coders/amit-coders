@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BootcampSection from "../components/BootcampSection/BootcampSection";
+import { ArrowLongLeftIcon, ArrowLongRightIcon } from '@heroicons/react/20/solid'
 import {
   BarsArrowUpIcon,
   ChevronDownIcon,
@@ -315,6 +316,123 @@ export default function Blog() {
               ))}
             </div>
           </div>
+            {/* Pagination starts here */}
+
+            <nav className="flex mt-6 items-center justify-between border-t border-gray-200 px-4 sm:px-0">
+                  <div className="-mt-px flex w-0 flex-1">
+                    <a
+                      href="#"
+                      className="inline-flex items-center border-t-2 border-transparent pr-1 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    >
+                      <ArrowLongLeftIcon className="mr-3 h-5 w-5 text-gray-400" aria-hidden="true" />
+                      Previous
+                    </a>
+                  </div>
+                  <div className="hidden md:-mt-px md:flex">
+                    <a
+                      href="#"
+                      className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    >
+                      1
+                    </a>
+                    {/* Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" */}
+                    <a
+                      href="#"
+                      className="inline-flex items-center border-t-2 border-teal-600 px-4 pt-4 text-sm font-medium text-Light-Sea-Green"
+                      aria-current="page"
+                    >
+                      2
+                    </a>
+                    <a
+                      href="#"
+                      className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    >
+                      3
+                    </a>
+                    <span className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500">
+                      ...
+                    </span>
+                    <a
+                      href="#"
+                      className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    >
+                      8
+                    </a>
+                    <a
+                      href="#"
+                      className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    >
+                      9
+                    </a>
+                    <a
+                      href="#"
+                      className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    >
+                      10
+                    </a>
+                  </div>
+                  <div className="-mt-px flex w-0 flex-1 justify-end">
+                    <a
+                      href="#"
+                      className="inline-flex items-center border-t-2 border-transparent pl-1 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    >
+                      Next
+                      <ArrowLongRightIcon className="ml-3 h-5 w-5 text-gray-400" aria-hidden="true" />
+                    </a>
+                  </div>
+                </nav>
+
+    {/* Pagination ends here */}
+        </div>
+      </div>
+      <BootcampSection />
+
+      {/* Newsletter  */}
+      <div className="bg-white py-20 sm:py-24 lg:py-32 z-10">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 lg:grid-cols-12 lg:gap-8 lg:px-8">
+          <div className="max-w-xl text-3xl font-bold tracking-tight text-Prussian-Blue sm:text-4xl lg:col-span-7">
+            <h2 className="inline sm:block lg:inline xl:block">
+              {/* Want product news and updates? */}
+              Subscribe To Our Newsletter and Blogs
+            </h2>{" "}
+            <p className="inline text-2xl sm:block lg:inline xl:block">
+              {/* Sign up for our newsletter. */}
+              For the most recent updates, promotional codes, and intriguing
+              insights from the tech industry.
+            </p>
+          </div>
+          <form className="w-full max-w-md lg:col-span-5 lg:pt-2">
+            <div className="flex gap-x-4">
+              <label htmlFor="email-address" className="sr-only">
+                Email address
+              </label>
+              <input
+                id="email-address"
+                name="email"
+                type="email"
+                autoComplete="email"
+                required
+                className="min-w-0 flex-auto rounded-md border-0 px-3.5 py-2 text-Prussian-Blue shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-teal-600 sm:text-sm sm:leading-6"
+                placeholder="Enter your email"
+              />
+              <button
+                type="submit"
+                className="flex-none rounded-md bg-Light-Sea-Green px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-teal-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"
+              >
+                Subscribe
+              </button>
+            </div>
+            <p className="mt-4 text-sm leading-6 text-Prussian-Blue">
+              We care about your data. Read our{" "}
+              <a
+                href="/TermsAndPrivacyPolicy"
+                className="font-semibold text-Light-Sea-Green hover:text-teal-600"
+              >
+                privacy&nbsp;policy
+              </a>
+              .
+            </p>
+          </form>
         </div>
       </div>
     </>
