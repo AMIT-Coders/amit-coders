@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { ChevronRightIcon, HomeIcon } from '@heroicons/react/20/solid'
+import { FaUserTie, FaHandsHelping, FaClipboardList, FaNetworkWired } from 'react-icons/fa'; // Replace with appropriate icons if necessary
+
 
 export const metadata: Metadata = {
   title: "Data Analytics",
@@ -26,6 +28,7 @@ const pages = [
 
 export default function DataAnalytics() {
   return (
+    <>
     <div className="relative isolate overflow-hidden bg-gray-900 py-8 sm:py-12">
       {/* &auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-5&exp=15&blend-mode=multiply */}
     <img
@@ -112,5 +115,50 @@ export default function DataAnalytics() {
       </div>
     </div>
   </div>
+
+          {/*  */}
+
+          <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-8">
+        
+        {/* Card 1 */}
+        <div className="flex flex-col items-center bg-teal-500 text-white p-6 rounded-lg shadow-md flex-grow max-w-[300px]">
+          <FaUserTie className="w-12 h-12 mb-4" />
+          <h3 className="text-lg font-semibold mb-2">Expert Insights</h3>
+          <p className="text-center">
+            Gain insights from IT industry veterans through expert lectures and guest speakers.
+          </p>
+        </div>
+
+        {/* Card 2 */}
+        <div className="flex flex-col items-center bg-white text-dark-blue-900 p-6 rounded-lg shadow-md flex-grow max-w-[300px]">
+          <FaHandsHelping className="w-12 h-12 mb-4 text-teal-500" />
+          <h3 className="text-lg font-semibold mb-2">Hands-On Skills Development</h3>
+          <p className="text-center">
+            Apply skills with live labs and simulations for practical application.
+          </p>
+        </div>
+
+        {/* Card 3 */}
+        <div className="flex flex-col items-center bg-white text-dark-blue-900 p-6 rounded-lg shadow-md flex-grow max-w-[300px]">
+          <FaClipboardList className="w-12 h-12 mb-4 text-teal-500" />
+          <h3 className="text-lg font-semibold mb-2">Career Success</h3>
+          <p className="text-center">
+            Access comprehensive career services during and after the bootcamp, including support for resume building, interview preparation, and job search strategies.
+          </p>
+        </div>
+
+        {/* Card 4 */}
+        <div className="flex flex-col items-center bg-white text-dark-blue-900 p-6 rounded-lg shadow-md flex-grow max-w-[300px]">
+          <FaNetworkWired className="w-12 h-12 mb-4 text-teal-500" />
+          <h3 className="text-lg font-semibold mb-2">Networking Excellence</h3>
+          <p className="text-center">
+            Establish Industry Connections for ongoing learning, alignment with new tech stacks, and continuous support through community.
+          </p>
+        </div>
+      </div>
+    </div>
+
+        </>
   );
 }

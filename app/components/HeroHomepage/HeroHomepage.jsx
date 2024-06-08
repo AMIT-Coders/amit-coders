@@ -39,9 +39,9 @@ export default function HeroHomepage() {
           </div>
           <div className="overflow-hidden">
             <div className="mx-auto max-w-7xl px-6 pb-16 pt-18 sm:pt-16 lg:px-8 lg:pt-6">
-              <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
+              <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none">
                 <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                  <h1 className="text-4xl font-bold tracking-tight text-Prussian-Blue sm:text-6xl">
+                  <h1 className="text-4xl font-bold tracking-tight text-Prussian-Blue sm:text-6xl lg:pt-28">
                     Unleash your <span className="text-Light-Sea-Green text-decoration">Ambition</span>.
                     <br/>
                     Step into the world of Tech
