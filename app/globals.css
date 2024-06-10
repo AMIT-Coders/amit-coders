@@ -114,3 +114,25 @@ body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+
+
+/* FAQS for courses starts here */
+
+
+/* Custom styles for group-open behavior */
+details > summary {
+  list-style: none; /* Hide default arrow */
+}
+
+details[open] summary {
+  background-color: #1a202c; /* dark blue */
+  color: white;
+  border-radius: 0.5rem 0.5rem 0 0; /* rounded top corners */
+}
+
+details summary::-webkit-details-marker {
+  display: none; /* Hide default marker */
+}
+
+/* FAQS for courses ends here */

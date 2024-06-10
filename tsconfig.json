@@ -19,7 +19,8 @@
     ],
     "paths": {
       "@/*": ["./*"]
-    }
+    },
+    "target": "ES2017"
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/HeroHomepage/HeroHomepage.jsx", "app/components/FAQsHomepage/FAQsHomepage.tsx", "app/components/Navbar/Navbar.jsx", "app/components/Footer/Footer.tsx", "app/components/Dropdown/Dropdown.js", "app/components/BootcampSection/BootcampSection.jsx", "app/Careers/page.tsx"],
   "exclude": ["node_modules"]

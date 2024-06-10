@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function Careers() {
   return (
-    <div className="text-black">
+    <div className="text-black animate-jump-out">
       <h1>AMIT Careers</h1>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis

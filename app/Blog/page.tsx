@@ -1,6 +1,13 @@
+import { sanityFetch } from "@/sanity/lib/fetch";
+import { postsQuery } from "@/sanity/lib/queries";
+import { SanityDocument } from "next-sanity";
+import Posts from "./Posts";
 import type { Metadata } from "next";
 import BootcampSection from "../components/BootcampSection/BootcampSection";
-import { ArrowLongLeftIcon, ArrowLongRightIcon } from '@heroicons/react/20/solid'
+import {
+  ArrowLongLeftIcon,
+  ArrowLongRightIcon,
+} from "@heroicons/react/20/solid";
 import {
   BarsArrowUpIcon,
   ChevronDownIcon,
@@ -134,9 +141,13 @@ const posts = [
   // More posts...
 ];
 
-export default function Blog() {
+export default async function Blog() {
+  const postsFromSanity = await sanityFetch<SanityDocument[]>({
+    query: postsQuery,
+  });
   return (
     <>
+      <Posts posts={postsFromSanity} />
       <div className="bg-white py-16 sm:py-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
@@ -336,9 +347,9 @@ export default function Blog() {
               ))}
             </div>
           </div>
-            {/* Pagination starts here */}
+          {/* Pagination starts here */}
 
-            <nav className="flex mt-6 items-center justify-between border-t border-gray-200 px-4 sm:px-0">
+          {/* <nav className="flex mt-6 items-center justify-between border-t border-gray-200 px-4 sm:px-0">
                   <div className="-mt-px flex w-0 flex-1">
                     <a
                       href="#"
@@ -354,9 +365,9 @@ export default function Blog() {
                       className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
                     >
                       1
-                    </a>
-                    {/* Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" */}
-                    <a
+                    </a> */}
+          {/* Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" */}
+          {/* <a
                       href="#"
                       className="inline-flex items-center border-t-2 border-teal-600 px-4 pt-4 text-sm font-medium text-Light-Sea-Green"
                       aria-current="page"
@@ -400,9 +411,9 @@ export default function Blog() {
                       <ArrowLongRightIcon className="ml-3 h-5 w-5 text-gray-400" aria-hidden="true" />
                     </a>
                   </div>
-                </nav>
+                </nav> */}
 
-    {/* Pagination ends here */}
+          {/* Pagination ends here */}
         </div>
       </div>
       <BootcampSection />
